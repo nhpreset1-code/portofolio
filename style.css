@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: url("..//assets/cursor.png"), auto;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.layouts {
+  max-width: 600px;
+  border: 2px solid black;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+}
+
+.topbar {
+  background-color: rgb(8, 140, 192);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.topbar h3 {
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+
+.topbar h3:hover {
+  transform: scale(1.2);
+}
+
+/* items */
+.items {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  padding: 36px;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  box-shadow: 0px 0px 4px 1px #999;
+  border-radius: 8px;
+}
+
+.item-image {
+  max-width: 50%;
+}
+
+.item-a {
+  width: 100%;
+}
+
+.item-submit {
+  width: 100%;
+  padding: 8px;
+  background-color: rgb(13, 166, 226);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+/* items end */
+
+/* BELL Control */
+
+/* PAGE TITLE */
+.page-title {
+  text-align: center;
+  padding: 16px;
+  font-size: xx-large;
+  font-weight: 800;
+}
+/* PAGE TITLE END */
+
+.bells {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  padding: 10px;
+}
+
+.bell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 4px 1px #999;
+  border-radius: 8px;
+  gap: 8px;
+  padding: 10px;
+}
+
+.bell-image {
+  width: 100px;
+}
+
+.bell-submit {
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(13, 166, 226);
+  border-radius: 5px;
+  border: none;
+  font-weight: bolder;
+  color: white;
+}
+/* Led Control end */
+
+.bottombar {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(8, 140, 192);
+  width: 100%;
+  padding: 16px;
+}
+
+.bottombar ul {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+.bottombar ul li {
+  flex: 1;
+  list-style: none;
+}
+
+.bottombar ul li a {
+  color: wheat;
+  text-decoration: none;
+  font-size: x-large;
+  transition: all 0.3s ease-in-out;
+}
+
+.bottombar ul li:hover {
+  transform: scale(1.2);
+}
